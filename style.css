@@ -129,7 +129,57 @@ font-family: 'Roboto', sans-serif;
 .topnav #myLinks {
   display: none;
 }
+.color-first-section {
+    background-color: #500801;
+}
 
+.flex-section-one {
+    display:flex;
+    padding-top:80px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+}
+
+.first-section {
+    width:60%;
+}
+
+.square-bag-style{
+    width: 35%;
+}
+
+h2 {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 54px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    font-weight: lighter;
+    color:#ffffff;
+}
+
+.first-section p {
+    margin-top: 10px;
+    margin-bottom: 13px;
+}
+
+.read-more {
+    background-color: #1d0303;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border:none;
+}
+
+/* media query starts here  */
 @media (max-width: 1240px) {
   .icons {
       flex-direction: row;
@@ -148,9 +198,31 @@ font-family: 'Roboto', sans-serif;
       margin-top:100px;
       justify-content: initial;
   }
+  .first-section {
+    width:50%;
+    }
+
+    .square-bag-style{
+        width: 80%;
+        margin-left:20px;
+    }
+
 }
 
-/* media query starts here  */
+@media (max-width: 1180px) {
+    .first-section p {
+        font-size: 16px;
+        margin-right: 20px;
+        
+    }
+    h2 {
+        font-size:40px;
+    }
+    .first-section {
+        margin-left:50px;
+    }
+}
+
 
 @media (max-width: 1040px) {
     h1 {
@@ -172,9 +244,25 @@ font-family: 'Roboto', sans-serif;
     margin-left: 40%;
     
     }
+
+    .flex-section-one{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-section  {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 75%;
+    }
+    .first-section > p:nth-child(2) {
+    width: 75%;
+    }
+
 }
 
 @media (max-width: 900px) {
+
     h1 {
     font-size: 52px;
     margin-left:20px;
@@ -197,6 +285,18 @@ font-family: 'Roboto', sans-serif;
     h1 {
         width: 300px;
     }
+}
+@media (max-width: 825px) {
+    .first-section > p:nth-child(2) {
+        width: initial;
+    }
+    h2 {
+      font-size: 38px;
+    }
+    .first-section p {
+      font-size: 14px;
+    }
+
 }
 
 @media (max-width: 540px) {
